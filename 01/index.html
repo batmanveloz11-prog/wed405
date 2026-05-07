@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRO A HTML</title>
+</head>
+<body bgcolor="#cccccc" text="#000000">
+    <a href="dos.html">Ir a la dos</a>
+    <a href="miestilo.html">Ir a mi estilo</a>
+    <a href="https://www.google.com" target="_blank">GOOGLE</a>
+    <a href="../index.html" target="_blank">Volver al menú</a>
+    <h1>Gabriel de Jesus</h1>
+    <h2>Gabriel de Jesus</h2>
+    <h3>Gabriel de Jesus</h3>
+    <h4>Gabriel de Jesus</h4>
+    <h5>Gabriel de Jesus</h5>
+    <h6>Gabriel de Jesus</h6>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis id praesentium tempora obcaecati ratione dolorum consectetur rerum. 
+        Voluptatum amet tenetur iure! Possimus hic minus deserunt voluptatibus modi distinctio nisi beatae!</p>
+    <hr>
+        <marquee behavior="scroll" direction="left">Viva mexico</marquee>
+        <marquee behavior="scroll" direction="right">Viva mexico</marquee>
+    <hr>
+    <ul type="square">
+        <li>Gabriel</li>
+        <li>Gabriel</li>
+        <li>gabriel</li>
+
+    </ul>
+    <ol type="I">
+        <li>Gabriel</li>
+        <li>Gabriel</li>
+        <li>gabriel</li>
+    </ol>
+    <img src="img/cecytem2.png" alt="" width="100px" height="100px" >
+    <table border="1", cellpadding="10", cellspacing="0">
+        <tr>
+            <td>Gabriel</td>
+            <td>Gabriel</td>
+        </tr>
+    </table>
+
+    
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6TTm7Tt-xGw?si=QsEPEvpWe9Nwifqz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ninx124/video/7636096401432218888" data-video-id="7636096401432218888" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@ninx124" href="https://www.tiktok.com/@ninx124?refer=embed">@ninx124</a> Luego voy a subir uno mas dificil y pongan recomendaciones de personajes que quieran que juego o suba de nivel El juego se llama danmachi battle chronicles por si preguntan <a title="danmachi" target="_blank" href="https://www.tiktok.com/tag/danmachi?refer=embed">#danmachi</a> <a title="danmachibattlechronicles" target="_blank" href="https://www.tiktok.com/tag/danmachibattlechronicles?refer=embed">#danmachibattlechronicles</a> <a title="familiafreya" target="_blank" href="https://www.tiktok.com/tag/familiafreya?refer=embed">#FamiliaFreya</a> <a title="bellcranel" target="_blank" href="https://www.tiktok.com/tag/bellcranel?refer=embed">#bellcranel</a> <a title="familialoki" target="_blank" href="https://www.tiktok.com/tag/familialoki?refer=embed">#FamiliaLoki</a> <a target="_blank" title="♬ sonido original  - guepardo00" href="https://www.tiktok.com/music/sonido-original-guepardo00-7636096778983148306?refer=embed">♬ sonido original  - guepardo00</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+    <h1>Formularios</h1>
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <form id="formCompleto" name="miFormulario" action="/enviar.php" method="POST" enctype="multipart/form-data" novalidate>
+    
+    <!-- 2. FIELDSET - Agrupar campos relacionados -->
+    <fieldset>
+        <legend>📋 Datos Personales</legend>
+        
+        <!-- 3. INPUT - Todos los tipos -->
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required maxlength="50" placeholder="Tu nombre completo">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required multiple>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+        </div>
+
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}">
+        </div>
+
+        <div class="form-group">
+            <label for="url">Sitio Web:</label>
+            <input type="url" id="url" name="url" placeholder="https://ejemplo.com">
+        </div>
+
+        <div class="form-group">
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" min="1" max="100" step="0.5">
+        </div>
+
+        <div class="form-group">
+            <label for="rango">Rango:</label>
+            <input type="range" id="rango" name="rango" min="0" max="100" value="50">
+        </div>
+
+        <div class="form-group">
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <div class="form-group">
+            <label for="fechaHora">Fecha y Hora:</label>
+            <input type="datetime-local" id="fechaHora" name="fechaHora">
+        </div>
+
+        <div class="form-group">
+            <label for="mes">Mes:</label>
+            <input type="month" id="mes" name="mes">
+        </div>
+
+        <div class="form-group">
+            <label for="semana">Semana:</label>
+            <input type="week" id="semana" name="semana">
+        </div>
+
+        <div class="form-group">
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora">
+        </div>
+
+        <div class="form-group">
+            <label for="color">Color:</label>
+            <input type="color" id="color" name="color" value="#ff0000">
+        </div>
+
+        <div class="form-group">
+            <label for="archivo">Archivo:</label>
+            <input type="file" id="archivo" name="archivo" accept="image/*,.pdf" multiple>
+        </div>
+
+        <div class="form-group">
+            <label for="buscar">Buscar:</label>
+            <input type="search" id="buscar" name="buscar">
+        </div>
+
+        <div class="form-group">
+            <label for="oculto">ID Usuario (oculto):</label>
+            <input type="hidden" id="oculto" name="user_id" value="12345">
+        </div>
+
+        <!-- 4. TEXTAREA - Texto multilínea -->
+        <div class="form-group">
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50" maxlength="500" placeholder="Escribe tus comentarios..."></textarea>
+        </div>
+
+    </fieldset>
+
+    <!-- 5. OUTPUT - Mostrar resultado -->
+    <div class="form-group">
+        <label for="resultado">Resultado:</label>
+        <output id="resultado" name="resultado" for="numero rango"></output>
+    </div>
+
+    <!-- 6. SELECT - Lista desplegable -->
+    <div class="form-group">
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="">Selecciona un país</option>
+            <optgroup label="América">
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+                <option value="br">Brasil</option>
+            </optgroup>
+            <optgroup label="Europa">
+                <option value="es">España</option>
+                <option value="fr">Francia</option>
+            </optgroup>
+        </select>
+    </div>
+
+    <!-- 7. DATALIST - Autocompletado -->
+    <div class="form-group">
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" id="ciudad" name="ciudad" list="ciudades">
+        <datalist id="ciudades">
+            <option value="Ciudad de México">
+            <option value="Buenos Aires">
+            <option value="Madrid">
+            <option value="Barcelona">
+        </datalist>
+    </div>
+
+    <!-- 8. PROGRESS - Barra de progreso -->
+    <div class="form-group">
+        <label>Progreso: <progress id="progreso" value="75" max="100"></progress> 75%</label>
+    </div>
+
+    <!-- 9. METER - Medidor -->
+    <div class="form-group">
+        <label>Espacio en disco: 
+            <meter id="disco" value="250" min="0" max="500" low="100" high="400" optimum="300">250/500 GB</meter>
+        </label>
+    </div>
+
+    <!-- 10. LABEL - Etiqueta -->
+    <fieldset>
+        <legend>🎨 Preferencias</legend>
+        
+        <!-- 11. INPUT type="radio" -->
+        <div>
+            <input type="radio" id="hombre" name="genero" value="hombre" checked>
+            <label for="hombre">Hombre</label>
+        </div>
+        <div>
+            <input type="radio" id="mujer" name="genero" value="mujer">
+            <label for="mujer">Mujer</label>
+        </div>
+
+        <!-- 12. INPUT type="checkbox" -->
+        <div>
+            <input type="checkbox" id="notificaciones" name="notificaciones" checked>
+            <label for="notificaciones">Recibir notificaciones</label>
+        </div>
+        <div>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">Aceptar términos y condiciones</label>
+        </div>
+    </fieldset>
+
+    <!-- 13. BUTTON - Botones -->
+    <div class="form-group">
+        <button type="submit">🚀 Enviar Formulario</button>
+        <button type="reset">🔄 Limpiar</button>
+        <button type="button" onclick="alert('¡Botón personalizado!')">ℹ️ Info</button>
+    </div>
+
+</form>
+<script>
+// JavaScript para demostrar OUTPUT
+document.getElementById('numero').addEventListener('input', function() {
+    document.getElementById('resultado').value = this.value;
+});
+</script>
+</body>
+</html>
