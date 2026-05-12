@@ -29,7 +29,7 @@ const calcular = () => {
         plazo = 18;
         porcentaje = 0.20;
     }
-    var contado = costo * porcentaje;
+    var contado = costo * cantidad;
     var abono = credito / plazo;
     var credito = contado+(contado * porcentaje);
     var abono = credito / plazo;
