@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credi Coppel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body onload="calcular()">
+    <img src="img/coppel.png" alt="" srcset="" width="200px">
+    <title>Credi Coppel</title>
+    <hr>
+    <br>
+    <h4>Productos:</h4>
+    <br>
+    <select id="producto" onchange="calcular()">
+        <option value="tv">Televisor</option>
+        <option value="comedor">Comedor</option>
+        <option value="lavadora">Lavadora</option>
+        <option value="moto">Moto</option>
+        <option value="sala">Sala</option>
+    </select>
+    <div id="img" ></div>
+    <div id="precio">Precio: $0.00 MXN</div>
+    <hr>
+    <h3>Plazo</h3>
+    <input type="radio" name="plazo" id="uno"onchange="calcular()" checked /> 6 meses(+10%) <br>
+    <input type="radio" name="plazo" id="dos"onchange="calcular()" /> 12 meses(+15%) <br>
+    <input type="radio" name="plazo" id="tres"onchange="calcular()" /> 18 meses(+20%) <br><br>
+    <h3>Cantidad</h3>
+    <input type="number" value="1" min="1" max="10" id="cantidad" onchange="calcular()"/><br>
+    <br>
+
+    <div id="contado">Precio de contado: $0.00 MXN</div>
+    <div id="credito">Precio con crédito: $0.00 MXN</div>
+    <div id="abono">Abono Mensual: $0.00 MXN</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
