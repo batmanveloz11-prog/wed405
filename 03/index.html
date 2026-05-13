@@ -66,6 +66,40 @@
                     <tr>
                         <td colspan="2"><input type="color" class="form-control" id="colorborde"></td>
                     </tr>
+                    <tr>
+                        <td colspan="2"><h2>COLOR DE SOMBRA</h2></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="color" class="form-control" id="colorsombra"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>DESPLAZAMIENTO SOMBRA VERTICAL</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control" id="ejeY" min="-50" max="50" value="0"></td>
+                        <td class="w-50 text-center"><h1 id="vejeY">0</h1></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>DESPLAZAMIENTO SOMBRA HORIZONTAL</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control" id="ejeX" min="-50" max="50" value="0"></td>
+                        <td class="w-50 text-center"><h1 id="vejeX">0</h1></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>DESENFOQUE SOMBRA</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control" id="blur" min="0" max="100" value="10"></td>
+                        <td class="w-50 text-center"><h1 id="vblur">10</h1></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>TAMAÑO SOMBRA</h2></td>
+                    </tr>
+                    <tr>
+                        <td class="w-50"><input type="range" class="form-control" id="spread" min="-50" max="50" value="0"></td>
+                        <td class="w-50 text-center"><h1 id="vspread">0</h1></td>
+                    </tr>
                 </table>
             </div>
             <div class="col centrar">
@@ -73,8 +107,10 @@
 
                 </div>
             </div>
+            
         </div>
     </div>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"></script>
     <script src="main.js"></script>
 </body>
