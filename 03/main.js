@@ -55,3 +55,13 @@ spread.oninput = () => {
     document.getElementById("vspread").innerHTML = spread.value;
     actualizarSombra();
 }
+ejeX.oninput = () => {
+    document.getElementById("vejeX").innerHTML = ejeX.value;
+    actualizarSombra();
+}       
+ejeY.oninput = () => {
+    document.getElementById("vejeY").innerHTML = ejeY.value;
+    actualizarSombra();
+}
+colorsombra.onchange = () => {    actualizarSombra();
+}
